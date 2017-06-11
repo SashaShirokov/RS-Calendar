@@ -1,0 +1,37 @@
+.page-title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: $mainOrange;
+}
+
+input[type=text] {
+  // box-shadow: none;
+  margin-bottom: 1.2rem;
+}
+
+.weather {
+  align-items: center;
+  background-color: $clock-bg-color;
+  border: 2px solid $clock-border-color;
+  border-radius: 50%;
+  display: flex;
+  height: 14rem;
+  justify-content: center;
+  margin: 4rem auto;
+  width: 20rem;
+}
+
+.weather-text {
+  color: $clock-text-color;
+  max-width: 15rem;
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .page-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+}

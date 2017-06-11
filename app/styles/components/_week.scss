@@ -1,0 +1,63 @@
+.week {
+  .tuesday {
+    background-color: $clock-border-color;
+  }
+
+  .myRow {
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .calendar {
+    margin: 0;
+  }
+
+  .events {
+    background-color: #e6e6e6;
+    padding-bottom: 20px;
+  }
+
+  .myDate {
+    background-color: #e6e6e6;
+    font-size: 1.6rem;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+
+
+  .myEvent {
+    width: 70%;
+    border-left: 2px solid $mainOrange;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: left;
+
+
+    h4 {
+      padding: 15px 0;
+      font-size: 1.3rem;
+      margin-bottom: 13px;
+    }
+  }
+
+  .task {
+    border-left: 2px solid $clock-border-color;
+  }
+
+  .lec {
+    border-left: 2px solid #6CA700;
+  }
+
+  .myTime {
+    border-right: 1px solid #cccccc;
+    margin: 13px;
+    padding-right: 5px;
+  }
+
+
+}
+
+.scheduleNav {
+  margin-bottom: 25px;
+}

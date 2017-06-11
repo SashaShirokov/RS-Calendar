@@ -1,0 +1,59 @@
+.courseItem {
+  transition: background .3s ease-out;
+  padding: 1rem;
+
+  p {
+    margin: 0;
+  }
+
+  > :last-child {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.container__header--link {
+  border: 1px solid $light-grey-border;
+  padding: 7px;
+  display: flex;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.container__header {
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #999;
+  }
+}
+
+.container__footer {
+  padding: 1rem 1rem 0 1rem;
+  border: 1px solid $light-grey-border;
+
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #999;
+  }
+}
+
+.listTitle {
+  text-align: center;
+  color: $mainOrange;
+  cursor: pointer;
+  padding: 1rem;
+  transition: background .3s ease-out;
+  margin-bottom: 0;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.container {
+  margin: 0;
+}

@@ -1,0 +1,209 @@
+.scheduleNav {
+  text-align: center;
+  padding-bottom: 20px;
+  color: $mainOrange;
+  font-size: 1.5rem;
+  padding-top: 25px;
+  padding-bottom: 0;
+
+  &__month {
+    margin-right: 10px;
+  }
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .rowFlex {
+    display: block;
+  }
+}
+
+.left {
+  float: none;
+  order: 2;
+
+  .container {
+    border: none;
+  }
+}
+
+.right {
+  float: none;
+  order: 1;
+}
+
+.myRow {
+  display: flex;
+  width: 100%;
+
+  span:first-child {
+      padding-right: 3px;
+  }
+}
+
+.calendar {
+    display: block;
+    background: #ffffff;
+    // width: 300px;
+    border: solid 1px #cccccc;
+    margin: 10px auto;
+    box-shadow: 0 0 15px 0 #c0c0c0;
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 30px 0;
+    float: none;
+
+  header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      cursor: default;
+      font-size: 1.1rem;
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      user-select: none;
+
+
+
+    .month-display {
+        align-items: center;
+        height: 40px;
+        background: $clock-bg-color;
+        border: 1px solid $clock-border-color;
+    }
+
+    .month-label {
+        flex: 1;
+    }
+
+    .arrow {
+        text-align: center;
+        flex-basis: 15%;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background .2s;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+
+  @media (min-width: 640px) {
+    header {
+      font-size: 1.4rem;
+    }
+  }
+
+  .week {
+    border-top: solid 1px #cccccc;
+  }
+
+  .week:first-child {
+    border-top: none;
+  }
+
+  .day-names {
+    color: $mainOrange;
+    font-weight: bold;
+    cursor: default;
+    font-size: 1.2rem;
+
+     .day {
+       height: 30px;
+       cursor: default;
+     }
+
+     .day:hover {
+       background: inherit;
+     }
+  }
+
+  .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 35px;
+    border-left: solid 1px #cccccc;
+    cursor: pointer;
+    transition: all .2s;
+    font-size: 0.7rem;
+  }
+
+  @media (min-width: 640px) {
+    .day {
+      font-size: 0.8rem;
+    }
+  }
+
+  .day:hover {
+    background: #efefef;
+  }
+
+  .day.today {
+    // background: #dceaf8;
+    background-color: $clock-bg-color;
+  }
+
+  .day.different-month {
+    color: #c0c0c0;
+  }
+
+  .day.selected {
+    background: $clock-border-color;
+    color: #ffffff;
+  }
+}
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+    float: none;
+}
+
+@media (min-width: 640px) {
+  .calendar {
+    margin: auto;
+  }
+
+  .calendar .day {
+    height: 50px;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+      float: right;
+  }
+
+  .scheduleNav {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .scheduleNav {
+    padding: 50px 0;
+  }
+
+  .calendar {
+    width: 100%;
+    margin: auto;
+  }
+
+  .calendar .day {
+    height: 90px;
+  }
+}

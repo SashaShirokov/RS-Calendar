@@ -1,0 +1,22 @@
+@import "base/variables";
+
+// foundation
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
+
+
+
+// Components
+@import "components/mainNavigation";
+@import "components/weather";
+@import "components/clock";
+@import "components/controls";
+@import "components/feedback";
+@import "components/feedbackItem";
+@import "components/week";
+@import "components/calendar";
+@import "components/dayBanner";
+@import "components/curriculum";
+@import "components/getInTouchModal";
+@import "components/about";
